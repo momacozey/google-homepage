@@ -1,11 +1,11 @@
 
 ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding-top: 14px;
+  padding-right: 28px;
+  padding-left: 15px;
   display: block;
   -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 40px;
@@ -13,11 +13,14 @@ ul{
 
 li{
   display: inline;
+  padding: 8px;
+  position: relative;
+  text-align: -webkit-match-parent;
 }
 
 html{
   height: 100%;
-  display: block;
+
 }
 
 *{
@@ -28,7 +31,11 @@ padding: 0;
 
 body {
   display: block;
-  margin: 8px;
+}
+
+.topRight a:hover{
+  text-decoration: underline;
+  color: rgba(0,0,0, 0.67)
 }
 
 .topRight {
@@ -42,7 +49,7 @@ div{
 .centerBlock{
   margin: auto;
   width: 550px;
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 #logo{
@@ -50,6 +57,8 @@ display: block;
 margin: 0 auto;
 padding-bottom: 10px;
 }
+
+
 
 input{
   width: 90%;
@@ -60,11 +69,27 @@ input{
   background-color: white;
   -webkit-rtl-ordering: logical;
   cursor:text;
-  padding: 1px;
   border width: 2px;
   border-style: inset;
   border-color: initial;
-  border-image: inital;
+  border-image: initial;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  font: 400 13.3333px Arial;
+  -webkit-writing-mode: horizontal-tb;
+}
+
+#searchBox:hover{
+  border: 2px;
+  border-color: grey;
+  box-shadow: 2px 2px 5px grey;
 }
 
 #searchBox{
@@ -75,10 +100,25 @@ input{
 
 #mic {
   position: relative;
-  height: 20px;
-  left: -2%;
+  left: -2px;
+  height: 24px;
+  cursor: pointer;
   vertical-align: middle;
 }
+#signIn {
+  background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+  border: 1px solid #4285f4;
+  color: white;
+  padding: 0px 12px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  z-index: auto;
+  line-height: 28px;
+  border-radius: 2px;
+}
+
 a {
   text-decoration: none;
   color: rgba(0, 0, 0, .87);
@@ -87,4 +127,102 @@ a {
 
 a:-webkit-any-link {
   cursor: pointer;
+}
+
+.navLeft:hover {
+  text-decoration: underline;
+}
+
+.navleft {
+  padding-top: 14px;
+  color: rgba(0, 0, 0, 0.77);
+  vertical-align: sub;
+}
+
+#appsIcon:hover {
+  opacity: 1.0;
+}
+
+#appsIcon{
+  height: 16px;
+  vertical-align: middle;
+  opacity: 0.6;
+  padding-right: 5px;
+}
+
+.searchButtons{
+  margin-left: 25%;
+}
+
+.buttons{
+  display: inline;
+  margin: 15px 3px;
+  height: 40px;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  font-size: small;
+  font-weight: bold;
+  color: #757575;
+  line-height: 0;
+  padding: 14px;
+}
+
+button{
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  background-color: buttonface;
+  box-sizing: border-box;
+}
+
+button{
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  font: 400 13.3333px Arial;
+  -webkit-writing-mode: horizontal-tb;
+  -webkit-appearance: button;
+}
+
+.buttons:hover{
+  border: 1px solid #b4b6ba;
+  color: black;
+}
+
+:focus{
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.bottomNav a:hover {
+  text-decoration: underline;
+}
+
+.bottomNav {
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 6px 14px 14px 12px;
+  display: inline-block;
+}
+
+.bottomNav a{
+  padding-left: 8px;
+  color: rgba(0,0,0,0.67);
+  vertical-align: sub;
+}
+
+
+.bottomRight {
+  float: right;
+  margin: 0;
+  padding-right: 28px;
+  display: inline-block;
 }
